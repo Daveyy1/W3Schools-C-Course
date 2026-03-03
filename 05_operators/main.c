@@ -81,5 +81,46 @@ int main() {
 
     printf("%d\n", passwordLength >= 8); // 0 (false), too short
     printf("%d\n", passwordLength < 8);  // 1 (true), needs more characters
+
+
+    // LOGICAL OPERATORS //
+    /* && AND
+     * || OR
+     * ! NOT
+    */
+
+    int isLoggedIn = 1;
+    int isAdmin = 0;
+
+    printf("Regular user: %d\n", isLoggedIn && !isAdmin);
+    printf("Has access: %d\n", isLoggedIn || isAdmin);
+    printf("Not logged in: %d\n", !isLoggedIn);
+
+    // OPERATOR PRECEDENCE //
+    int result1 = 2 + 3 * 4;     // 2 + 12 = 14
+    int result2 = (2 + 3) * 4;   // 5 * 4 = 20
+
+    printf("%d\n", result1);
+    printf("%d\n", result2);
+
+    /* () - Parentheses
+    *, /, % - Multiplication, Division, Modulus
+    +, - - Addition, Subtraction
+    >, <, >=, <= - Comparison
+    ==, != - Equality
+    && - Logical AND
+    || - Logical OR
+    = - Assignment
+    */ // Internal order of C
+
+    // CODING CHALLENGE //
+    // Write itemPrice here
+    int itemPrice = 5;
+    // Write shippingCost here
+    int shippingCost = 2;
+    // Write sum here (itemPrice + shippingCost)
+    int sum = itemPrice + shippingCost;
+    // Print sum here
+    printf("%d", sum);
     return 0;
 }
